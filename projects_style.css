@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h3 {
+    padding: 10px
+}
+
+.container-fluid {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50% !important;
+}
+
+.col {
+    border: 2px solid gray;
+    border-radius: 25px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 10px;
+}
