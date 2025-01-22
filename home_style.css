@@ -12,11 +12,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center
 }
 
 .inner-headings {
     border: 0px solid #ddd;
-    height: 50px;
+    height: 10vh;
     line-height: 50px;
     font-size: 45px;
     text-transform: uppercase;
