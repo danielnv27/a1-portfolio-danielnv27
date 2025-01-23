@@ -19,7 +19,6 @@ EMAIL: danielnv@uci.edu
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
-<!-- Use image with alt descrption -->
 <body>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -35,7 +34,7 @@ EMAIL: danielnv@uci.edu
       .catch(error => console.error('Error loading header:', error));
   </script>
   
-  <!-- Do contact page -->
+  <!-- Home Section -->
   <div id="home">
     <div class="wrapper">
       <h1 class="content">
@@ -52,48 +51,52 @@ EMAIL: danielnv@uci.edu
     </div>
   </div>
 
+  <!-- Projects Section -->
   <div class="projects" id="projects">  
-    <h1 class="fw-medium">Projects</h1>
+    <h2 class="fw-medium">Projects</h2>
     <div class="container-fluid">
       <div class="row row-cols-1 gy-5">
-          <div class="col" title="Full Moonsoon Burger website coming soon!">
+          <div class="col" title="Full Monsoon Burger website coming soon!">
               <h3 class="fw-normal">Monsoon Burger Website</h3>
-              <img src="assets/monsoonabout.png" alt="screenshot of the about section for the Monsoon Burger website">
-            </div>
-            <div class="col">
+              <img src="assets/monsoonabout.png" alt="Screenshot of the about section for the Monsoon Burger website">
+          </div>
+          <div class="col">
               <h3 class="fw-normal">Instagram Data Visualizer</h3>
               <a href="https://github.com/dvo27/Instagram-Data-Analyzer">
-                <img src="assets/ig_data.png" alt="three example graphs displaying user's instagram data">
+                <img src="assets/ig_data.png" alt="Three example graphs displaying user's Instagram data">
               </a>
           </div>
           <div class="col">
               <h3 class="fw-normal">Outfit Generator</h3>
               <a href="https://github.com/dvo27/outfit-generator/releases/tag/0.0.3">
-                <img src="assets/outfit_demo.png" alt="">
+                <img src="assets/outfit_demo.png" alt="Example screenshot of outfit generator app interface">
               </a>
           </div>
       </div>
+    </div>
   </div>
-</div>
 
-<div class="contact" id="contact">
-  <h1 class="fw-medium">Want to get in touch?</h1>
-  <p>Send me a message and let's get in contact!</p>
-  <form action="https://formsubmit.co/danielnvo08@gmail.com" method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</div>
+  <!-- Contact Section -->
+  <div class="contact" id="contact">
+    <h2 class="fw-medium">Want to get in touch?</h2>
+    <p>Send me a message and let's get in contact!</p>
+    <form action="https://formsubmit.co/danielnvo08@gmail.com" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </div>
 
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">↑</button>
 
-<!-- Back to Top Button -->
-<button id="backToTop" class="back-to-top" onclick="scrollToTop()">↑</button>
-
-
-<script src="backToTopButton.js" defer></script>
-
-
+  <script src="backToTopButton.js" defer></script>
 </body>
 </html>
