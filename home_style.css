@@ -1,5 +1,5 @@
 html, body {
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: 'Ubuntu', serif !important;
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     height:  100vh;
@@ -9,7 +9,11 @@ html, body {
     text-align: center;
 }
 .navbar-nav .nav-link:hover {
-    color: #8A9787 !important;
+    color: #458fff !important;
+}
+
+.navbar-nav .nav-item a {
+    color: white !important;
 }
 
 .wrapper {
@@ -32,8 +36,8 @@ html, body {
 }
 
 .wrapper .content ol li {
-    animation: slide-up 12s infinite;
-    color: #8A9787;
+    animation: slide-up 10s infinite;
+    color: #becaff;
     text-transform: uppercase;
 }
 
@@ -54,6 +58,17 @@ html, body {
 
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects h1 {
+    padding: 10px;
+    color: white;
+}
+
 .container-fluid {
     display: flex;
     text-align: center;
@@ -61,11 +76,17 @@ html, body {
     width: 50% !important;
 }
 
-
 .col {
     border: 2px solid gray;
     border-radius: 25px;
     transition: transform .2s;
+    background-color: white;
+}
+
+.col h3 {
+    color: rgb(39, 39, 39);
+    font-weight: 550 !important;
+    padding-top: 10px;
 }
 
 .col:hover {
@@ -78,4 +99,87 @@ img {
     width: 80%;
     height: auto;
     padding-bottom: 10px;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #8A9787;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #6f786a;
+    transform: scale(1.1);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    color: white;
+    padding: 10vh;
+    text-align: center;
+    padding: 2rem
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #8A9787;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #6f786a;
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 0 1rem;
+    }
 }
